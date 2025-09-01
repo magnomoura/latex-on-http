@@ -4,7 +4,7 @@ services:
     # restart: always
     # command: prod
     ports:
-     - "8080:8080"
+     - "8282:8080"
     volumes:
      - .:/app/latex-on-http
      - ./tools:/app/latex-on-http/tools
