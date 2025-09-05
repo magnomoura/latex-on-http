@@ -4,7 +4,7 @@ services:
     # restart: always
     # command: prod
     ports:
-     - "127.0.0.1:2345:8080"
+     - "8080:8080"
     volumes:
      - .:/app/latex-on-http
      - ./tools:/app/latex-on-http/tools
@@ -13,7 +13,7 @@ services:
       CACHE_HOST: cache
       # KEEP_WORKSPACE_DIR: 1
       KEEP_WORKSPACE_DIR_ON_ERROR: 1
-      GOOSE_DBSTRING: postgres://latex.supertabela.com.br:latexdev@postgres_db:5432/latexonhttp
+      GOOSE_DBSTRING: postgres://latexonhttp:latexdev@postgres_db:5432/latexonhttp
     depends_on:
       - cache
       - postgres_db
