@@ -13,7 +13,7 @@ services:
       CACHE_HOST: cache
       # KEEP_WORKSPACE_DIR: 1
       KEEP_WORKSPACE_DIR_ON_ERROR: 1
-      GOOSE_DBSTRING: postgres://latexonhttp:latexdev@postgres_db:5432/latexonhttp
+      GOOSE_DBSTRING: postgres://postgres_db-eo4c0sk0oow8skwgwgoww0ck-123832955064:latexdev@postgres_db:5432/latexonhttp
     depends_on:
       - cache
       - postgres_db
