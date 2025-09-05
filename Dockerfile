@@ -45,6 +45,6 @@ ENV GOOSE_DRIVER postgres
 
 COPY ./tools/entrypoint.sh ./tools/
 
-EXPOSE 8080
+EXPOSE 2345
 ENTRYPOINT ["/bin/bash", "tools/entrypoint.sh"]
 CMD ["prod"]
